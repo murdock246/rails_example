@@ -1,0 +1,26 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron h1{
+		margin-left: 200px;
+		color: blue;
+		font-family: arial,helvetica,sans-seriff;
+		text-transform: uppercase;
+}
+
+.tabla{
+	background-image: url("http://todofondosdepaisajes.com/wp-content/uploads/images/ac/montanas-0.jpg");
+	height: 750px;
+}
+
+.tabla h1{
+	color: green;
+}
+
+.tabla {
+	margin-left : 90px;
+	color: black;
+	font-weight: bold;
+	font-family: arial,helvetica,sans-seriff;
+}

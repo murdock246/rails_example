@@ -1,0 +1,56 @@
+<body>
+
+<head>
+       <link href="posts.css.scss" rel="stylesheet">
+</head>
+
+  <div class ="jumbotron">
+    <h1>Miralos!!</h1><!El listado de los posts>
+  </div>
+   
+  <div class ="tabla">
+    <h1>Listado de Posts</h1>
+      <th></th>
+      <th></th>
+    <h2><%= link_to 'New post', new_post_path %></h2>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <table>
+      
+        <tr>
+          <th>Titulo</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>Text</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+       
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.title %></td>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <td><%= post.text %></td>
+          <th></th>
+          <th></th>
+          <th></th>
+          <td><%= link_to 'Show', post_path(post) %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post_path(post),
+                          method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+        </tr>
+      <% end %>
+      </table>
+
+  </div>
+</body>
