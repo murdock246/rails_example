@@ -2,25 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron h1{
-		margin-left: 200px;
-		color: blue;
-		font-family: arial,helvetica,sans-seriff;
-		text-transform: uppercase;
+.body {
+	background-image: url("http://masquemanualidades.com/wp-content/uploads/2014/05/hojas_secas_y_verdes-800x600.jpg");
+	border: 0; 
+	height: 60px;
+	width: 80px;
+	
 }
 
-.tabla{
+.jumbotron h1{
+	margin-left: 200px;
+	color: blue;
+	font-family: arial,helvetica,sans-seriff;
+	text-transform: uppercase;
+	display: inline;
+}
+
+.tabla {
 	background-image: url("http://todofondosdepaisajes.com/wp-content/uploads/images/ac/montanas-0.jpg");
-	height: 750px;
+	border: 0; 
+	height: 765px;
+	width: 1022px;
+	
+	margin-left : 30px;
+	color: black;
+	font-weight: bold;
+	font-family: arial,helvetica,sans-seriff;
 }
 
 .tabla h1{
 	color: green;
 }
 
-.tabla {
-	margin-left : 90px;
-	color: black;
-	font-weight: bold;
-	font-family: arial,helvetica,sans-seriff;
+.tabla tr th{
+	color: orange;
+	text-transform: underline;
 }
